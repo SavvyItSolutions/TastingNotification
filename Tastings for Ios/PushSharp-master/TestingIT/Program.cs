@@ -37,7 +37,8 @@ namespace TestingIT
             {
                 DeviceToken = dt,
                 //Payload = JObject.Parse("{\"aps\":{ \"alert\" : \"You've just tasted a new wine\" },{\"title\":\"222\"}")
-                Payload = JObject.Parse("{ \"aps\" : { \"alert\" : \"You've just tasted a new wine\" } }")
+                //Payload = JObject.Parse("{ \"aps\" : { \"alert\" : \"You've just tasted a new wine\" } }")
+                Payload = JObject.Parse("{ \"aps\" : { \"alert\" : \"You've just tasted a new wine\" },\"wineid\":\"95\" }")
             });
 
             //foreach (var dt in Settings.Instance.ApnsDeviceTokens)
