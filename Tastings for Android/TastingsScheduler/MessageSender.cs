@@ -7,6 +7,7 @@ using Newtonsoft.Json.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Configuration;
+using NLog;
 
 namespace TastingsScheduler
 {
@@ -14,16 +15,17 @@ namespace TastingsScheduler
     {
         //public const string API_KEY = "AAAAdqVJxm0:APA91bFVnjrPDCCeaQUyke9Am3tNCD05pXsAuj1PFh1-kFzEI6mTy72KXNmdfCrNTisuWMeXSF5l23ZSdwLPUce8C1a7oq_JJyodNgi8NZevIFNIfkaGFxKIX-imvMeW9ufSVirhpuXb";
         //public const string MESSAGE = "please review about tasted wine";
-
-        public  void SendNotification(string token,string WineName)
+        private static Logger logger = LogManager.GetCurrentClassLogger();
+        public  void SendNotification(string token,int WineId,string WineName)
         {
+            logger.Info("Sending notification for :"+WineId);
             string API_KEY = ConfigurationManager.AppSettings["API_KEY"];
-            string MESSAGE = "You have tasted "+ WineName + ". Please share your views with us!";
+            string MESSAGE = "You have tasted "+ WineName + ". Please share your review with us!";
             var jGcmData = new JObject();
             var jData = new JObject
             {
                 { "message", MESSAGE },
-                {"wineid","476" }
+                {"wineid",WineId }
 
             };
             //for sending to topic(group)
@@ -49,6 +51,7 @@ namespace TastingsScheduler
                             {
                                 Console.WriteLine(response);
                                 Console.WriteLine("Message sent: check the client device notification tray.");
+                                logger.Trace("Message sent: check the client device notification tray.");
                             }));
                 }
             }
@@ -56,6 +59,8 @@ namespace TastingsScheduler
             {
                 Console.WriteLine("Unable to send GCM message:");
                 Console.Error.WriteLine(e.StackTrace);
+                logger.Debug("Exception caught: "+e.Message);
+                logger.Trace("Exception caught: " + e.StackTrace);
             }
         }
     }

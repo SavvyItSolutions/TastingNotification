@@ -7,3 +7,11 @@ C:\GIT\TastingsScheduler\TastingsScheduler\obj\Debug\TastingsScheduler.exe
 C:\GIT\TastingsScheduler\TastingsScheduler\obj\Debug\TastingsScheduler.pdb
 C:\GIT\TastingsScheduler\TastingsScheduler\bin\Debug\Newtonsoft.Json.dll
 C:\GIT\TastingsScheduler\TastingsScheduler\bin\Debug\Newtonsoft.Json.xml
+C:\GIT\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\TastingsScheduler.exe.config
+C:\GIT\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\TastingsScheduler.exe
+C:\GIT\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\TastingsScheduler.pdb
+C:\GIT\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\Newtonsoft.Json.dll
+C:\GIT\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\Newtonsoft.Json.xml
+C:\GIT\TastingNotification\Tastings for Android\TastingsScheduler\obj\Debug\TastingsScheduler.exe
+C:\GIT\TastingNotification\Tastings for Android\TastingsScheduler\obj\Debug\TastingsScheduler.pdb
+C:\GIT\TastingNotification\Tastings for Android\TastingsScheduler\obj\Debug\TastingsScheduler.csprojResolveAssemblyReference.cache

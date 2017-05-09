@@ -8,17 +8,18 @@ namespace TastingsScheduler
 {
     public class AmountsMovements
     {
-        //private int wineId;
+        private int wineId;
         private string labelName;
-        private string barCode;
+        //private string barCode;
         private string customerId;
         private string token;
+        private int deviceType;
 
-        //public int WineId
-        //{
-        //    get { return this.wineId; }
-        //    set { this.wineId = value; }
-        //}
+        public int WineId
+        {
+            get { return this.wineId; }
+            set { this.wineId = value; }
+        }
         public string LabelName
         {
             get { return this.labelName; }
@@ -38,6 +39,12 @@ namespace TastingsScheduler
         {
             get { return this.token; }
             set { this.token = value; }
+        }
+
+        public int DeviceType
+        {
+            get { return this.deviceType; }
+            set { this.deviceType = value; }
         }
     }
 }
