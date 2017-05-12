@@ -12,7 +12,7 @@ namespace TastingsScheduler
     public class MessageSenderIOS
     {
         private static Logger logger = LogManager.GetCurrentClassLogger();
-        public void sendMessage(int wineId,string token,string WineName)
+        public void sendMessage(int wineId,string token,string WineName,int StoreId)
         {
             var succeeded = 0;
             var failed = 0;
@@ -34,7 +34,7 @@ namespace TastingsScheduler
                 DeviceToken = dt,
                 //Payload = JObject.Parse("{\"aps\":{ \"alert\" : \"You've just tasted a new wine\" },{\"title\":\"222\"}")
                 //Payload = JObject.Parse("{ \"aps\" : { \"alert\" : \"You've just tasted a new wine\" } }")
-                Payload = JObject.Parse("{ \"aps\" : { \"alert\" : \"You've just tasted "+WineName+". Please review the wine.\" },\"wineid\":\""+wineId+"\" }")
+                Payload = JObject.Parse("{ \"aps\" : { \"alert\" : \"You've just tasted "+WineName+". Please review the wine.\" },\"wineid\":\""+wineId+ "\",\"storeid\":\"" + StoreId + "\" }")
             });
             logger.Info("Notification sent");
             //foreach (var dt in Settings.Instance.ApnsDeviceTokens)

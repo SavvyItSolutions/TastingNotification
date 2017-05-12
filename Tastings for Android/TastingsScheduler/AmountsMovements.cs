@@ -14,6 +14,7 @@ namespace TastingsScheduler
         private string customerId;
         private string token;
         private int deviceType;
+        private int storeId;
 
         public int WineId
         {
@@ -45,6 +46,12 @@ namespace TastingsScheduler
         {
             get { return this.deviceType; }
             set { this.deviceType = value; }
+        }
+
+        public int StoreId
+        {
+            get { return this.storeId; }
+            set { this.storeId = value; }
         }
     }
 }

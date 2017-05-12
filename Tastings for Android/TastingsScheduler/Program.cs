@@ -50,6 +50,7 @@ namespace TastingsScheduler
                                     obj.CustomerId = dr["CustomerId"].ToString();
                                     obj.Token = dr["DeviceToken"].ToString();
                                     obj.DeviceType = Convert.ToInt32(dr["DeviceType"]);
+                                    obj.StoreId = Convert.ToInt32(dr["PlantFinal"]);
                                     LstObjWall.Add(obj);
                                 }
                             }
@@ -64,6 +65,7 @@ namespace TastingsScheduler
                                     //obj.BarCode = dr["Barcode"].ToString();
                                     obj.CustomerId = dr["CustomerId"].ToString();
                                     obj.Token = dr["DeviceToken"].ToString();
+                                    obj.StoreId = Convert.ToInt32(dr["PlantFinal"]);
                                     LstObjPP.Add(obj);
                                 }
                             }
@@ -75,9 +77,9 @@ namespace TastingsScheduler
                                 if (LstObjWall[i].Token != null && LstObjWall[i].Token != "")
                                 {
                                     if (LstObjWall[i].DeviceType == 1)
-                                        ms.SendNotification(LstObjWall[i].Token.Replace(',', ':'), LstObjWall[i].WineId, LstObjWall[i].LabelName);
+                                        ms.SendNotification(LstObjWall[i].Token.Replace(',', ':'), LstObjWall[i].WineId, LstObjWall[i].LabelName, LstObjWall[i].StoreId);
                                     else if (LstObjWall[i].DeviceType == 2)
-                                        msIOs.sendMessage(LstObjWall[i].WineId, LstObjWall[i].Token, LstObjWall[i].LabelName);
+                                        msIOs.sendMessage(LstObjWall[i].WineId, LstObjWall[i].Token, LstObjWall[i].LabelName, LstObjWall[i].StoreId);
                                 }
                                 logger.Info("Sent notification for WineId:" + LstObjWall[i].WineId + " for CustomerID:" + LstObjWall[i].CustomerId);
                             }
@@ -87,9 +89,9 @@ namespace TastingsScheduler
                                 if (LstObjPP[i].Token != null && LstObjPP[i].Token != "")
                                 {
                                     if (LstObjPP[i].DeviceType == 1)
-                                        ms.SendNotification(LstObjPP[i].Token.Replace(',', ':'), LstObjPP[i].WineId, LstObjPP[i].LabelName);
+                                        ms.SendNotification(LstObjPP[i].Token.Replace(',', ':'), LstObjPP[i].WineId, LstObjPP[i].LabelName, LstObjPP[i].StoreId);
                                     else if (LstObjPP[i].DeviceType == 2)
-                                        msIOs.sendMessage(LstObjPP[i].WineId, LstObjPP[i].Token, LstObjPP[i].LabelName);
+                                        msIOs.sendMessage(LstObjPP[i].WineId, LstObjPP[i].Token, LstObjPP[i].LabelName, LstObjPP[i].StoreId);
                                 }
                                 logger.Info("Sent notification for WineId:" + LstObjWall[i].WineId + " for CustomerID:" + LstObjWall[i].CustomerId);
                             }
