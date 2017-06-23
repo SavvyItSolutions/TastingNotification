@@ -12,12 +12,12 @@ namespace TastingsScheduler
     public class MessageSenderIOS
     {
         private static Logger logger = LogManager.GetCurrentClassLogger();
-        public void sendMessage(int wineId,string token,string WineName,int StoreId)
+        public void sendMessage(string BarCode,string token,string WineName,int StoreId)
         {
             var succeeded = 0;
             var failed = 0;
             var attempted = 0;
-            logger.Info("Sending notification for :"+wineId);
+            logger.Info("Sending notification for :"+BarCode);
             //var config = new ApnsConfiguration (ApnsConfiguration.ApnsServerEnvironment.Sandbox, Settings.Instance.ApnsCertificateFile, Settings.Instance.ApnsCertificatePassword);
             var config = new ApnsConfiguration(ApnsConfiguration.ApnsServerEnvironment.Sandbox, "PushNotificationCertificate.p12", "Wineoutlet@99666");
             var broker = new ApnsServiceBroker(config);
@@ -34,7 +34,7 @@ namespace TastingsScheduler
                 DeviceToken = dt,
                 //Payload = JObject.Parse("{\"aps\":{ \"alert\" : \"You've just tasted a new wine\" },{\"title\":\"222\"}")
                 //Payload = JObject.Parse("{ \"aps\" : { \"alert\" : \"You've just tasted a new wine\" } }")
-                Payload = JObject.Parse("{ \"aps\" : { \"alert\" : \"You've just tasted "+WineName+". Please review the wine.\" },\"wineid\":\""+wineId+ "\",\"storeid\":\"" + StoreId + "\" }")
+                Payload = JObject.Parse("{ \"aps\" : { \"alert\" : \"You've just tasted "+WineName+". Please review the wine.\" },\"barcode\":\""+BarCode+ "\",\"storeid\":\"" + StoreId + "\" }")
             });
             logger.Info("Notification sent");
             //foreach (var dt in Settings.Instance.ApnsDeviceTokens)

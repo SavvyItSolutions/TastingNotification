@@ -8,7 +8,8 @@ namespace TastingsScheduler
 {
     public class AmountsMovements
     {
-        private int wineId;
+        //private int wineId;
+        private string barcode;
         private string labelName;
         //private string barCode;
         private string customerId;
@@ -16,10 +17,15 @@ namespace TastingsScheduler
         private int deviceType;
         private int storeId;
 
-        public int WineId
+        //public int WineId
+        //{
+        //    get { return this.wineId; }
+        //    set { this.wineId = value; }
+        //}
+        public string BarCode
         {
-            get { return this.wineId; }
-            set { this.wineId = value; }
+            get { return this.barcode; }
+            set { this.barcode = value; }
         }
         public string LabelName
         {

@@ -16,16 +16,16 @@ namespace TastingsScheduler
         //public const string API_KEY = "AAAAdqVJxm0:APA91bFVnjrPDCCeaQUyke9Am3tNCD05pXsAuj1PFh1-kFzEI6mTy72KXNmdfCrNTisuWMeXSF5l23ZSdwLPUce8C1a7oq_JJyodNgi8NZevIFNIfkaGFxKIX-imvMeW9ufSVirhpuXb";
         //public const string MESSAGE = "please review about tasted wine";
         private static Logger logger = LogManager.GetCurrentClassLogger();
-        public  void SendNotification(string token,int WineId,string WineName,int StoreId)
+        public  void SendNotification(string token,string BarCode,string WineName,int StoreId)
         {
-            logger.Info("Sending notification for :"+WineId);
+            logger.Info("Sending notification for :"+BarCode);
             string API_KEY = ConfigurationManager.AppSettings["API_KEY"];
             string MESSAGE = "You have tasted "+ WineName + ". Please share your review with us!";
             var jGcmData = new JObject();
             var jData = new JObject
             {
                 { "message", MESSAGE },
-                {"wineid",WineId },
+                {"barcode",BarCode },
                 {"storeid",StoreId }
             };
             //for sending to topic(group)

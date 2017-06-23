@@ -44,7 +44,8 @@ namespace TastingsScheduler
                                 foreach (DataRow dr in dt.Rows)
                                 {
                                     obj = new AmountsMovements();
-                                    obj.WineId = Convert.ToInt32(dr["WineId"]);
+                                    //obj.WineId = Convert.ToInt32(dr["WineId"]);
+                                    obj.BarCode = dr["WineBarCode"].ToString();
                                     obj.LabelName = dr["LabelName"].ToString();
                                     //obj.BarCode = dr["Barcode"].ToString();
                                     obj.CustomerId = dr["CustomerId"].ToString();
@@ -60,7 +61,8 @@ namespace TastingsScheduler
                                 foreach (DataRow dr in dt.Rows)
                                 {
                                     obj = new AmountsMovements();
-                                    obj.WineId = Convert.ToInt32(dr["WineId"]);
+                                    //obj.WineId = Convert.ToInt32(dr["WineId"]);
+                                    obj.BarCode = dr["WineBarCode"].ToString();
                                     obj.LabelName = dr["LabelName"].ToString();
                                     //obj.BarCode = dr["Barcode"].ToString();
                                     obj.CustomerId = dr["CustomerId"].ToString();
@@ -77,11 +79,11 @@ namespace TastingsScheduler
                                 if (LstObjWall[i].Token != null && LstObjWall[i].Token != "")
                                 {
                                     if (LstObjWall[i].DeviceType == 1)
-                                        ms.SendNotification(LstObjWall[i].Token.Replace(',', ':'), LstObjWall[i].WineId, LstObjWall[i].LabelName, LstObjWall[i].StoreId);
+                                        ms.SendNotification(LstObjWall[i].Token.Replace(',', ':'), LstObjWall[i].BarCode, LstObjWall[i].LabelName, LstObjWall[i].StoreId);
                                     else if (LstObjWall[i].DeviceType == 2)
-                                        msIOs.sendMessage(LstObjWall[i].WineId, LstObjWall[i].Token, LstObjWall[i].LabelName, LstObjWall[i].StoreId);
+                                        msIOs.sendMessage(LstObjWall[i].BarCode, LstObjWall[i].Token, LstObjWall[i].LabelName, LstObjWall[i].StoreId);
                                 }
-                                logger.Info("Sent notification for WineId:" + LstObjWall[i].WineId + " for CustomerID:" + LstObjWall[i].CustomerId);
+                                logger.Info("Sent notification for WineId:" + LstObjWall[i].BarCode + " for CustomerID:" + LstObjWall[i].CustomerId);
                             }
                             for (int i = 0; i < LstObjPP.Count; i++)
                             {
@@ -89,11 +91,11 @@ namespace TastingsScheduler
                                 if (LstObjPP[i].Token != null && LstObjPP[i].Token != "")
                                 {
                                     if (LstObjPP[i].DeviceType == 1)
-                                        ms.SendNotification(LstObjPP[i].Token.Replace(',', ':'), LstObjPP[i].WineId, LstObjPP[i].LabelName, LstObjPP[i].StoreId);
+                                        ms.SendNotification(LstObjPP[i].Token.Replace(',', ':'), LstObjPP[i].BarCode, LstObjPP[i].LabelName, LstObjPP[i].StoreId);
                                     else if (LstObjPP[i].DeviceType == 2)
-                                        msIOs.sendMessage(LstObjPP[i].WineId, LstObjPP[i].Token, LstObjPP[i].LabelName, LstObjPP[i].StoreId);
+                                        msIOs.sendMessage(LstObjPP[i].BarCode, LstObjPP[i].Token, LstObjPP[i].LabelName, LstObjPP[i].StoreId);
                                 }
-                                logger.Info("Sent notification for WineId:" + LstObjWall[i].WineId + " for CustomerID:" + LstObjWall[i].CustomerId);
+                                logger.Info("Sent notification for WineId:" + LstObjWall[i].BarCode + " for CustomerID:" + LstObjWall[i].CustomerId);
                             }
                         }
                     }
