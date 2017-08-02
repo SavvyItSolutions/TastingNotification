@@ -18,3 +18,14 @@ C:\GIT\TastingNotification\Tastings for Android\TastingsScheduler\obj\Debug\Tast
 C:\GIT\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\NLog.config
 C:\GIT\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\NLog.dll
 C:\GIT\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\NLog.xml
+E:\Github\TastingNotification\Tastings for Android\TastingsScheduler\obj\Debug\TastingsScheduler.csprojResolveAssemblyReference.cache
+E:\Github\TastingNotification\Tastings for Android\TastingsScheduler\obj\Debug\TastingsScheduler.exe
+E:\Github\TastingNotification\Tastings for Android\TastingsScheduler\obj\Debug\TastingsScheduler.pdb
+E:\Github\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\NLog.config
+E:\Github\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\TastingsScheduler.exe.config
+E:\Github\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\TastingsScheduler.exe
+E:\Github\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\TastingsScheduler.pdb
+E:\Github\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\Newtonsoft.Json.dll
+E:\Github\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\NLog.dll
+E:\Github\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\Newtonsoft.Json.xml
+E:\Github\TastingNotification\Tastings for Android\TastingsScheduler\bin\Debug\NLog.xml

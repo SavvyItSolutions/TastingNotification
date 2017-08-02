@@ -19,8 +19,9 @@ namespace TastingsScheduler
             var attempted = 0;
             logger.Info("Sending notification for :"+BarCode);
             //var config = new ApnsConfiguration (ApnsConfiguration.ApnsServerEnvironment.Sandbox, Settings.Instance.ApnsCertificateFile, Settings.Instance.ApnsCertificatePassword);
-            var config = new ApnsConfiguration(ApnsConfiguration.ApnsServerEnvironment.Sandbox, "PushNotificationCertificate.p12", "Wineoutlet@99666");
+            var config = new ApnsConfiguration(ApnsConfiguration.ApnsServerEnvironment.Production, "Production2.p12", "Wineoutlet@99666");
             var broker = new ApnsServiceBroker(config);
+            broker.ChangeScale(10);
             broker.OnNotificationFailed += (notification, exception) => {
                 failed++;
             };
@@ -36,7 +37,7 @@ namespace TastingsScheduler
                 //Payload = JObject.Parse("{ \"aps\" : { \"alert\" : \"You've just tasted a new wine\" } }")
                 Payload = JObject.Parse("{ \"aps\" : { \"alert\" : \"You've just tasted "+WineName+". Please review the wine.\" },\"barcode\":\""+BarCode+ "\",\"storeid\":\"" + StoreId + "\" }")
             });
-            logger.Info("Notification sent");
+               logger.Info("Notification sent");
             //foreach (var dt in Settings.Instance.ApnsDeviceTokens)
             //{
             //    attempted++;

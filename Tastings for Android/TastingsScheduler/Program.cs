@@ -15,6 +15,13 @@ namespace TastingsScheduler
         private static Logger logger = LogManager.GetCurrentClassLogger();
         public static void Main(string[] args)
         {
+            //  MessageSenderIOS msIOs = new MessageSenderIOS();
+            //msIOs.sendMessage("0001000001189", "d85a40ea517601c397a2e0b404157bb4164134e17a1a822adbf7470f0093d047", "Just Testing notification", 1);
+            // msIOs.SendNotification("cFPtPgzgg1o,APA91bFt7Tp1mb1dthhHQVqDkbQHUapp-O1xrk9rKiLdLbJGJltq32smRjNE1lihbnN7sf5j8Fnjii2-o_MlDap-GB-IyqXBtZkJc4h0XxZzWFGRtOmyT9VUEig58T5fuFi9ifboBxij", "0001000001189", "Just Testing ", 1);
+            //msIOs.SendNotification("cFPtPgzgg1o,APA91bFt7Tp1mb1dthhHQVqDkbQHUapp-O1xrk9rKiLdLbJGJltq32smRjNE1lihbnN7sf5j8Fnjii2-o_MlDap-GB-IyqXBtZkJc4h0XxZzWFGRtOmyT9VUEig58T5fuFi9ifboBxij", "0001000003152", "Just Testing notification", 1);
+
+            //msIOs.SendNotification("cFPtPgzgg1o,APA91bFt7Tp1mb1dthhHQVqDkbQHUapp-O1xrk9rKiLdLbJGJltq32smRjNE1lihbnN7sf5j8Fnjii2-o_MlDap-GB-IyqXBtZkJc4h0XxZzWFGRtOmyT9VUEig58T5fuFi9ifboBxij", "0001000003152", "Just Testing notification", 1);
+            //msIOs.SendNotification("cFPtPgzgg1o,APA91bFt7Tp1mb1dthhHQVqDkbQHUapp-O1xrk9rKiLdLbJGJltq32smRjNE1lihbnN7sf5j8Fnjii2-o_MlDap-GB-IyqXBtZkJc4h0XxZzWFGRtOmyT9VUEig58T5fuFi9ifboBxij", "0001000003152", "Just Testing notification", 1);
             try
             {
                 string message = string.Format("Time: {0}", DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt"));
@@ -101,11 +108,11 @@ namespace TastingsScheduler
                     }
                 }
                 logger.Info("-------------------------------------------------------");
-                
-            }   
-            catch(Exception ex)
+
+            }
+            catch (Exception ex)
             {
-                logger.Trace("Exception caught = "+ex.Message.ToString());
+                logger.Trace("Exception caught = " + ex.Message.ToString());
             }
         }
     }

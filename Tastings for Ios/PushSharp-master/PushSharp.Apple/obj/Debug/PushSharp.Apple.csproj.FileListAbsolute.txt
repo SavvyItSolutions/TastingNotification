@@ -1,0 +1,9 @@
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Apple\bin\Debug\PushSharp.Apple.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Apple\bin\Debug\PushSharp.Apple.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Apple\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Apple\bin\Debug\PushSharp.Core.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Apple\bin\Debug\PushSharp.Core.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Apple\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Apple\obj\Debug\PushSharp.Apple.csprojResolveAssemblyReference.cache
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Apple\obj\Debug\PushSharp.Apple.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Apple\obj\Debug\PushSharp.Apple.pdb

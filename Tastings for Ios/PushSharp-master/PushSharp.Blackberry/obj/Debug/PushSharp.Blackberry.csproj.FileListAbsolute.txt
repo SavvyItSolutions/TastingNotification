@@ -1,0 +1,7 @@
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Blackberry\bin\Debug\PushSharp.Blackberry.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Blackberry\bin\Debug\PushSharp.Blackberry.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Blackberry\bin\Debug\PushSharp.Core.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Blackberry\bin\Debug\PushSharp.Core.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Blackberry\obj\Debug\PushSharp.Blackberry.csprojResolveAssemblyReference.cache
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Blackberry\obj\Debug\PushSharp.Blackberry.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Blackberry\obj\Debug\PushSharp.Blackberry.pdb

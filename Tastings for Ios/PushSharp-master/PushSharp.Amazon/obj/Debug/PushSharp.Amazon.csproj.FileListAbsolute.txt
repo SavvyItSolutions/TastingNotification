@@ -1,0 +1,9 @@
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Amazon\bin\Debug\PushSharp.Amazon.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Amazon\bin\Debug\PushSharp.Amazon.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Amazon\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Amazon\bin\Debug\PushSharp.Core.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Amazon\bin\Debug\PushSharp.Core.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Amazon\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Amazon\obj\Debug\PushSharp.Amazon.csprojResolveAssemblyReference.cache
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Amazon\obj\Debug\PushSharp.Amazon.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Amazon\obj\Debug\PushSharp.Amazon.pdb

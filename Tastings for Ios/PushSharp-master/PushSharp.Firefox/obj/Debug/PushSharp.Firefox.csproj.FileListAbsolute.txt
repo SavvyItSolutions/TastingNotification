@@ -1,0 +1,7 @@
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Firefox\bin\Debug\PushSharp.Firefox.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Firefox\bin\Debug\PushSharp.Firefox.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Firefox\bin\Debug\PushSharp.Core.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Firefox\bin\Debug\PushSharp.Core.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Firefox\obj\Debug\PushSharp.Firefox.csprojResolveAssemblyReference.cache
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Firefox\obj\Debug\PushSharp.Firefox.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Firefox\obj\Debug\PushSharp.Firefox.pdb

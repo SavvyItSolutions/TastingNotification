@@ -1,0 +1,54 @@
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\TestingIT.exe.config
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\TestingIT.exe
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\TestingIT.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\obj\Debug\TestingIT.csprojResolveAssemblyReference.cache
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\obj\Debug\TestingIT.exe
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\obj\Debug\TestingIT.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Amazon.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Apple.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Blackberry.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Core.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Firefox.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Google.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Tests.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Windows.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\nunit.framework.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Amazon.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Apple.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Blackberry.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Core.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Firefox.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Google.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Tests.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\PushSharp.Windows.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\bin\Debug\nunit.framework.xml
+C:\Users\SAVVYIT\Desktop\PushSharp-master\TestingIT\obj\Debug\TestingIT.csproj.TestingIT.exe.config
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\TestingIT.exe.config
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\TestingIT.exe
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\TestingIT.pdb
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\Newtonsoft.Json.dll
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Amazon.dll
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Apple.dll
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Blackberry.dll
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Core.dll
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Firefox.dll
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Google.dll
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Tests.dll
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Windows.dll
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\nunit.framework.dll
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Amazon.pdb
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Apple.pdb
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Blackberry.pdb
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Core.pdb
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Firefox.pdb
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Google.pdb
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Tests.pdb
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\PushSharp.Windows.pdb
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\Newtonsoft.Json.xml
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\bin\Debug\nunit.framework.xml
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\obj\Debug\TestingIT.csprojResolveAssemblyReference.cache
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\obj\Debug\TestingIT.csproj.TestingIT.exe.config
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\obj\Debug\TestingIT.exe
+E:\Github\TastingNotification\Tastings for Ios\PushSharp-master\TestingIT\obj\Debug\TestingIT.pdb

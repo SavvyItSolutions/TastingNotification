@@ -1,0 +1,4 @@
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Core\bin\Debug\PushSharp.Core.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Core\bin\Debug\PushSharp.Core.pdb
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Core\obj\Debug\PushSharp.Core.dll
+C:\Users\SAVVYIT\Desktop\PushSharp-master\PushSharp.Core\obj\Debug\PushSharp.Core.pdb
