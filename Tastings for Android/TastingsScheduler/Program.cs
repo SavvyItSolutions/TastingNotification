@@ -38,7 +38,7 @@ namespace TastingsScheduler
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Connection = conn;
                         conn.Open();
-                        logger.Info("Connection Oppened");
+                        logger.Info("Connection Opened");
                         SqlDataAdapter da = new SqlDataAdapter(cmd);
                         DataSet ds = new DataSet();
                         da.Fill(ds);
@@ -57,8 +57,14 @@ namespace TastingsScheduler
                                     //obj.BarCode = dr["Barcode"].ToString();
                                     obj.CustomerId = dr["CustomerId"].ToString();
                                     obj.Token = dr["DeviceToken"].ToString();
-                                    obj.DeviceType = Convert.ToInt32(dr["DeviceType"]);
-                                    obj.StoreId = Convert.ToInt32(dr["PlantFinal"]);
+                                    if (dr["DeviceType"] != DBNull.Value)
+                                        obj.DeviceType = Convert.ToInt32(dr["DeviceType"]);
+                                    else
+                                        obj.DeviceType = 0;
+                                    if (dr["PlantFinal"] != DBNull.Value)
+                                        obj.StoreId = Convert.ToInt32(dr["PlantFinal"]);
+                                    else
+                                        obj.StoreId = 0;
                                     LstObjWall.Add(obj);
                                 }
                             }
@@ -73,8 +79,16 @@ namespace TastingsScheduler
                                     obj.LabelName = dr["LabelName"].ToString();
                                     //obj.BarCode = dr["Barcode"].ToString();
                                     obj.CustomerId = dr["CustomerId"].ToString();
+
                                     obj.Token = dr["DeviceToken"].ToString();
-                                    obj.StoreId = Convert.ToInt32(dr["PlantFinal"]);
+                                    if (dr["DeviceType"] != DBNull.Value)
+                                        obj.DeviceType = Convert.ToInt32(dr["DeviceType"]);
+                                    else
+                                        obj.DeviceType = 0;
+                                    if (dr["PlantFinal"] != DBNull.Value)
+                                        obj.StoreId = Convert.ToInt32(dr["PlantFinal"]);
+                                    else
+                                        obj.StoreId = 0;
                                     LstObjPP.Add(obj);
                                 }
                             }
@@ -89,8 +103,13 @@ namespace TastingsScheduler
                                         ms.SendNotification(LstObjWall[i].Token.Replace(',', ':'), LstObjWall[i].BarCode, LstObjWall[i].LabelName, LstObjWall[i].StoreId);
                                     else if (LstObjWall[i].DeviceType == 2)
                                         msIOs.sendMessage(LstObjWall[i].BarCode, LstObjWall[i].Token, LstObjWall[i].LabelName, LstObjWall[i].StoreId);
+                                    logger.Info("Sent notification for WineId:" + LstObjWall[i].BarCode + " for CustomerID:" + LstObjWall[i].CustomerId);
                                 }
-                                logger.Info("Sent notification for WineId:" + LstObjWall[i].BarCode + " for CustomerID:" + LstObjWall[i].CustomerId);
+                                else
+                                {
+                                    logger.Info("Device token not available for CustomerID:" + LstObjWall[i].CustomerId);
+                                }
+                                
                             }
                             for (int i = 0; i < LstObjPP.Count; i++)
                             {
@@ -101,8 +120,13 @@ namespace TastingsScheduler
                                         ms.SendNotification(LstObjPP[i].Token.Replace(',', ':'), LstObjPP[i].BarCode, LstObjPP[i].LabelName, LstObjPP[i].StoreId);
                                     else if (LstObjPP[i].DeviceType == 2)
                                         msIOs.sendMessage(LstObjPP[i].BarCode, LstObjPP[i].Token, LstObjPP[i].LabelName, LstObjPP[i].StoreId);
+                                    logger.Info("Sent notification for WineId:" + LstObjWall[i].BarCode + " for CustomerID:" + LstObjWall[i].CustomerId);
                                 }
-                                logger.Info("Sent notification for WineId:" + LstObjWall[i].BarCode + " for CustomerID:" + LstObjWall[i].CustomerId);
+                                else
+                                {
+                                    logger.Info("Device Token not available for CustomerID:" + LstObjWall[i].CustomerId);
+                                }
+                                
                             }
                         }
                     }
