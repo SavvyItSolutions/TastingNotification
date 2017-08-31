@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,6 +55,8 @@ namespace TastingsScheduler
                                     //obj.WineId = Convert.ToInt32(dr["WineId"]);
                                     obj.BarCode = dr["WineBarCode"].ToString();
                                     obj.LabelName = dr["LabelName"].ToString();
+                                    //if ((obj.LabelName.IndexOf(@"\") != -1))
+                                    //    obj.LabelName = obj.LabelName.Replace("\\", string.Empty);
                                     //obj.BarCode = dr["Barcode"].ToString();
                                     obj.CustomerId = dr["CustomerId"].ToString();
                                     obj.Token = dr["DeviceToken"].ToString();
@@ -77,6 +80,9 @@ namespace TastingsScheduler
                                     //obj.WineId = Convert.ToInt32(dr["WineId"]);
                                     obj.BarCode = dr["WineBarCode"].ToString();
                                     obj.LabelName = dr["LabelName"].ToString();
+                                    //obj.LabelName = @""""obj.LabelName;
+                                    //if (obj.LabelName.Contains("\\"))
+                                    //    obj.LabelName = obj.LabelName.Replace("\\", string.Empty);
                                     //obj.BarCode = dr["Barcode"].ToString();
                                     obj.CustomerId = dr["CustomerId"].ToString();
 
@@ -99,6 +105,12 @@ namespace TastingsScheduler
                             {
                                 if (LstObjWall[i].Token != null && LstObjWall[i].Token != "")
                                 {
+
+                                    string str = "\"";
+                                    if (LstObjWall[i].LabelName.Contains(str))
+                                    {
+                                        LstObjWall[i].LabelName.Replace(str, "");
+                                    }
                                     if (LstObjWall[i].DeviceType == 1)
                                         ms.SendNotification(LstObjWall[i].Token.Replace(',', ':'), LstObjWall[i].BarCode, LstObjWall[i].LabelName, LstObjWall[i].StoreId);
                                     else if (LstObjWall[i].DeviceType == 2)
@@ -116,15 +128,20 @@ namespace TastingsScheduler
 
                                 if (LstObjPP[i].Token != null && LstObjPP[i].Token != "")
                                 {
+                                    string str= "\"";
+                                    if (LstObjPP[i].LabelName.Contains(str))
+                                    {
+                                        LstObjPP[i].LabelName.Replace(str, "");
+                                    }
                                     if (LstObjPP[i].DeviceType == 1)
                                         ms.SendNotification(LstObjPP[i].Token.Replace(',', ':'), LstObjPP[i].BarCode, LstObjPP[i].LabelName, LstObjPP[i].StoreId);
                                     else if (LstObjPP[i].DeviceType == 2)
                                         msIOs.sendMessage(LstObjPP[i].BarCode, LstObjPP[i].Token, LstObjPP[i].LabelName, LstObjPP[i].StoreId);
-                                    logger.Info("Sent notification for WineId:" + LstObjWall[i].BarCode + " for CustomerID:" + LstObjWall[i].CustomerId);
+                                    logger.Info("Sent notification for WineId:" + LstObjPP[i].BarCode + " for CustomerID:" + LstObjPP[i].CustomerId);
                                 }
                                 else
                                 {
-                                    logger.Info("Device Token not available for CustomerID:" + LstObjWall[i].CustomerId);
+                                    logger.Info("Device Token not available for CustomerID:" + LstObjPP[i].CustomerId);
                                 }
                                 
                             }
@@ -136,7 +153,27 @@ namespace TastingsScheduler
             }
             catch (Exception ex)
             {
-                logger.Trace("Exception caught = " + ex.Message.ToString());
+                string path = ConfigurationManager.AppSettings["ErrorLog"];
+                string message = string.Format("Time: {0}", DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt"));
+                message += Environment.NewLine;
+                message += "-----------------------------------------------------------";
+                message += Environment.NewLine;
+                message += string.Format("Message: {0}", ex.Message);
+                message += Environment.NewLine;
+                message += string.Format("StackTrace: {0}", ex.StackTrace);
+                message += Environment.NewLine;
+                message += string.Format("Source: {0}", ex.Source);
+                message += Environment.NewLine;
+                message += string.Format("TargetSite: {0}", ex.TargetSite.ToString());
+                message += Environment.NewLine;
+                message += "-----------------------------------------------------------";
+                message += Environment.NewLine;
+                System.IO.Directory.CreateDirectory(path);
+                using (StreamWriter writer = new StreamWriter(path + "Error.txt", true))
+                {
+                    writer.WriteLine(message);
+                    writer.Close();
+                }
             }
         }
     }
